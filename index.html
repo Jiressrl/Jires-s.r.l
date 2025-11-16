@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIRES S.R.L - Servicios Técnicos Generales</title>
+    <link rel="icon" href="images/JIRES LOGO BLANCO.JPG" type="image/jpeg">
+    
+    <!-- CDN de Bootstrap 5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CDN de Font Awesome 6.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación Fijo -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <img src="images/JIRES LOGO BLANCO.JPG" alt="JIRES S.R.L Logo" class="logo-img me-2">
+                <div class="d-flex flex-column">
+                    JIRES S.R.L
+                    <small class="slogan">SOLUCIONES TECNICAS, CONFIANZA GARANTIZADA</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tienda">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#propuesta">Propuesta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link cart-icon-wrapper" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge badge bg-primary rounded-pill">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="d-flex align-items-center text-center">
+            <div class="container">
+                <h1 class="display-3">Soluciones Técnicas a tu Alcance</h1>
+                <p class="lead">Expertos en mantenimiento y reparación para tu hogar y empresa. Confianza, calidad y eficiencia garantizadas.</p>
+                <a href="#tienda" class="btn btn-lg btn-primary">¡Ver Productos!</a>
+            </div>
+        </section>
+
+        <!-- Sección Tienda (Productos) -->
+        <section id="tienda" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros Productos</h2>
+                <div id="product-list" class="row">
+                    <!-- Los productos se cargarán aquí dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Servicios (Restaurada) -->
+        <section id="servicios" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros Servicios</h2>
+                <div id="service-list" class="row">
+                    <!-- Los servicios se cargarán aquí dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Propuesta de Valor -->
+        <section id="propuesta" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestra Propuesta de Valor</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="value-prop-item">
+                            <div class="icon-circle mb-3">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Confianza y Seguridad</h4>
+                            <p class="text-muted">Técnicos certificados y garantía en todos nuestros trabajos para tu total tranquilidad.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="value-prop-item">
+                            <div class="icon-circle mb-3">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4>Respuesta Rápida</h4>
+                            <p class="text-muted">Entendemos la urgencia. Ofrecemos diagnósticos y soluciones en tiempo récord.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="value-prop-item">
+                            <div class="icon-circle mb-3">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <h4>Precios Transparentes</h4>
+                            <p class="text-muted">Sin costos ocultos. Recibirás un presupuesto claro y detallado antes de iniciar cualquier trabajo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="py-5 bg-light">
+            <div class="container">
+                <h2 id="contacto-title" class="text-center mb-5">Contáctanos</h2>
+                <div class="row">
+                    <div class="col-lg-5 mb-4">
+                        <div class="card contact-card h-100 p-4 text-center">
+                            <i class="fas fa-phone-volume contact-icon"></i>
+                            <h3>Llámanos Ahora</h3>
+                            <p class="lead">Atención inmediata</p>
+                            <a href="tel:+18097138687" class="phone-number">809-713-8687</a>
+                            <a href="tel:+18093188687" class="phone-number mb-3">809-318-8687</a>
+                            <hr>
+                            <a href="https://wa.me/18093188687" target="_blank" class="btn btn-whatsapp w-100">
+                                <i class="fab fa-whatsapp"></i> Chatea con nosotros
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="card form-card p-4">
+                            <h3 class="text-center mb-4">O envíanos un mensaje</h3>
+                            <form id="contactForm" novalidate>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" required>
+                                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" placeholder="tu@correo.com" required>
+                                    <div class="invalid-feedback" id="emailError">Por favor, ingresa un correo válido.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Describe tu necesidad</label>
+                                    <textarea class="form-control" id="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                                    <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h5 class="footer-heading">Sobre JIRES S.R.L</h5>
+                    <p class="text-muted">Brindando a nuestros clientes soluciones técnicas con la más alta tecnología y un servicio al cliente excepcional.</p>
+                    <div class="footer-social-icons mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                    <h5 class="footer-heading">Soporte</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#tienda">Nuestros Productos</a></li>
+                        <li><a href="#contacto">Solicitar Servicio</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-heading">Contacto (Rep. Dominicana)</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li><i class="fas fa-phone"></i><span>809-713-8687 / 809-318-8687</span></li>
+                        <li><i class="fas fa-envelope"></i><span>Jiressrl@gmail.com</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Calle #11, 20, Hato Nuevo de Manoguayabo, Santo Domingo Oeste, Republica Dominicana.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-muted pt-4 mt-4 border-top">
+                <p>&copy; <span id="currentYear"></span> JIRES S.R.L. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Detalles del Producto -->
+    <div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productDetailModalLabel">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" class="img-fluid rounded mb-3" id="detail-product-image" alt="Imagen del Producto">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 id="detail-product-name"></h3>
+                            <p class="text-muted" id="detail-product-description"></p>
+                            <h4 class="product-price" id="detail-product-price"></h4>
+                            <h5>Puntos Fuertes:</h5>
+                            <ul id="detail-strong-points" class="list-unstyled">
+                                <!-- Strong points will be loaded here -->
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary add-to-cart-from-detail-btn" data-product-id="">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Detalles del Producto -->
+    <div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productDetailModalLabel">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" class="img-fluid rounded mb-3" id="detail-product-image" alt="Imagen del Producto">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 id="detail-product-name"></h3>
+                            <p class="text-muted" id="detail-product-description"></p>
+                            <h4 class="product-price" id="detail-product-price"></h4>
+                            <h5>Puntos Fuertes:</h5>
+                            <ul id="detail-strong-points" class="list-unstyled">
+                                <!-- Strong points will be loaded here -->
+                            </ul>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary add-to-cart-from-detail-btn" data-product-id="">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Detalles del Servicio -->
+    <div class="modal fade" id="serviceDetailModal" tabindex="-1" aria-labelledby="serviceDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceDetailModalLabel">Detalles del Servicio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" class="img-fluid rounded mb-3" id="detail-service-image" alt="Imagen del Servicio">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 id="detail-service-name"></h3>
+                            <p class="text-muted" id="detail-service-description"></p>
+                            <h5>Beneficios Clave:</h5>
+                            <ul id="detail-service-strong-points" class="list-unstyled">
+                                <!-- Strong points will be loaded here -->
+                            </ul>
+                            <div class="d-grid gap-2 mt-3">
+                                <a href="https://wa.me/18093188687?text=¡Hola! Me interesa el servicio de [NOMBRE_SERVICIO]. ¿Podrían darme más información?" target="_blank" class="btn btn-primary">Solicitar Servicio por WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Tu Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items-list" class="list-group mb-3">
+                        <!-- Los ítems del carrito se cargarán aquí -->
+                    </ul>
+                    <div class="d-flex justify-content-between fw-bold">
+                        <span>Total:</span>
+                        <span id="cart-subtotal">RD$ 0.00</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+                    <button type="button" class="btn btn-primary" id="checkout-whatsapp-btn">Confirmar Pedido por WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación (original) -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">¡Mensaje en camino!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Gracias por contactarnos. Se abrirá WhatsApp para que puedas enviar tu mensaje.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CDN de Bootstrap JS (Bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
